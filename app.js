@@ -1,4 +1,5 @@
 const { Pool } = require('pg');
+
 const express = require('express');
 
 const app = express();
@@ -10,6 +11,7 @@ const pool = new Pool({
   host: 'awsdatabase.ctc20sbzit4u.us-east-1.rds.amazonaws.com', //mydatabase-instance.cxtwajouzpmw.ap-northeast-1.rds.amazonaws.com
   database: 'Test2',
   port: 5432 // default PostgreSQL port
+ 
 });
 
 app.get('/api/users/:username/password/:password', async (req, res) => {
@@ -36,6 +38,6 @@ app.get('/api/users/:username/password/:password', async (req, res) => {
 
   
 
-app.listen(5005, () => {
-  console.log('Server listening on port 5005');
+app.listen(4000, () => {
+  console.log('Server listening on port 4000');
 });
