@@ -8,8 +8,8 @@ const app = express();
 const pool = new Pool({
   user: 'awstest',
   password: 'sara12345',
-  host: 'awsdatabase.ctc20sbzit4u.us-east-1.rds.amazonaws.com', //mydatabase-instance.cxtwajouzpmw.ap-northeast-1.rds.amazonaws.com
-  database: 'Test2',
+  host: 'awsdb.ctc20sbzit4u.us-east-1.rds.amazonaws.com', //mydatabase-instance.cxtwajouzpmw.ap-northeast-1.rds.amazonaws.com
+  database: 'Test',
   port: 5432 // default PostgreSQL port
  
 });
